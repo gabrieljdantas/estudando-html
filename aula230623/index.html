@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tabelas</title>
+    </head>
+
+    <body>
+        <h1>Tabelas</h1>
+
+        <!--<Table> -> Estrutura de uma tabela-->
+        <!--<tr> -> Linha de uma tabela-->
+        <!--<td> -> Representa a célula da tabela-->
+
+        <table border="1" style="width: 100%;">
+            <colgroup>
+                <col style="width: 20%; background-color: blue;">
+                <col style="width: 10%; background-color: red;">
+                <col style="width: 50%; background-color: green;"> 
+            </colgroup>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Fernando</td>
+                <td>27</td>
+                <td>Fernando@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Bruna</td>
+                <td>30</td>
+                <td>bruna@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Monique</td>
+                <td>22</td>
+                <td>monique@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Gabriel</td>
+                <td>19</td>
+                <td>gabriel@gmail.com</td>
+            </tr>
+        </table>
+
+        <h2>Tabuada Soma 2</h2>
+        <table>
+            <tr>
+                <th>Operação</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td>2+0 =</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2+1 =</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2+2 =</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2+3 =</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2+4 =</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>2+5 =</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>2+6 =</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>2+7 =</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>2+8 =</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2+9 =</td>
+                <td>11</td>
+            </tr>
+        </table>
+
+        <h2>Times de Futebol</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="4">Classificação times brasileirão</th>
+                </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>Pontos</th>
+                    <th>Saldo de Gols</th>
+                    <th>Vitorias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fluminense</td>
+                    <td>20</td>
+                    <td>13</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Corinthians</td>
+                    <td>30</td>
+                    <td>14</td>
+                    <td rowspan="2">6</td>
+                </tr>
+                <tr>
+                    <td>Palmeiras</td>
+                    <td>29</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Acesse nosso site. www.brasileirao.com</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
