@@ -7,18 +7,20 @@
     <body>
         <h1>Formularios</h1>
         <form>
+            Teste: 
+            <input type="text" pattern="[0-9]{4,8}"> <br>
             Nome:
-            <input type="text" name="nome" /> <br />
+            <input type="text" name="nome" placeholder="Digite nome completo"/> <br />
             Email:
-            <input type="text" placeholder="exemplo@exemplo.com" name="email"/> <br />
+            <input type="email" placeholder="exemplo@exemplo.com" name="email"/> <br />
             Senha:
-            <input type="password" name="senha"/> <br />
+            <input type="password" name="senha" minlength="6"/> <br />
             Idade:
-            <input type="number" name="idade"/> <br />
+            <input type="number" name="idade" min="0" max="120"/> <br />
             Horario de Registro:
             <input type="time" value="15:23" disabled name="horario"/>
             Data de Nascimento:
-            <input type="date" name="data-nascimento"/> <br />
+            <input type="date" name="data-nascimento" min="2023-06-26"/> <br />
             Telefone:
             <input type="tel" name="telefone" /> <br />
             URL da foto:
@@ -46,9 +48,14 @@
             </select> <br>
 
             Fale um pouco sobre você: <br>
-            <textarea>Texto Padrão</textarea>
-
-            <button>Enviar</button>
+            <textarea>Texto Padrão</textarea><br>
+            
+            <button type="button">Não Faz nada</button><br>
+            <button type="submit">Enviar</button><br>
+            <button type="reset"> Limpar </button><br>
+            <input type="button" value="Não faz nada / input"> <br>
+            <input type="reset" value="Limpar"> <br>
+            
         </form>
     </body>
 </html>
