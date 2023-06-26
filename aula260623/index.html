@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Formulario</title>
-</head>
-<body>
-    <h1>Formularios</h1>
-    <form>
-        Nome: 
-        <input type="text"> <br>
-        Email: 
-        <input type="text"> <br>
-        Senha: 
-        <input type="password"> <br>
-        
-        <button>Enviar</button>
-    </form>
-</body>
-</html> 
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form>
+            Nome:
+            <input type="text" name="nome" /> <br />
+            Email:
+            <input type="text" placeholder="exemplo@exemplo.com" name="email"/> <br />
+            Senha:
+            <input type="password" name="senha"/> <br />
+            Idade:
+            <input type="number" name="idade"/> <br />
+            Horario de Registro:
+            <input type="time" value="15:23" disabled name="horario"/>
+            Data de Nascimento:
+            <input type="date" name="data-nascimento"/> <br />
+            Telefone:
+            <input type="tel" name="telefone" /> <br />
+            URL da foto:
+            <input type="url" name="foto"/>
+            Frente do RG:
+            <input type="file" accept=".png, .jpg" multiple name="foto-rg"/> <br />
+            Escolha sua cor favorita:
+            <input type="color" name="cor"/> <br />
+            Estado Civil: <br />
+            Solteiro: <input type="radio" name="Estado-civil" /> <br />
+            Casado: <input type="radio" name="Estado-civil" /> <br />
+            Aceito os termos de uso: <input type="checkbox" /> <br />
+            Nivel de ingles: 1 <input type="range" min="1" max="5" step="0.5"/> 5<br/>
+            Estado:
+            <select name="estado">
+                <option disabled selected>Selecione um estado</option>
+                <option value="CE">Ceara</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="BA">Bahia</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PI">Piaui</option>
+                <option value="MG">Mato Grosso</option>
+            </select> <br>
+
+            Fale um pouco sobre você: <br>
+            <textarea>Texto Padrão</textarea>
+
+            <button>Enviar</button>
+        </form>
+    </body>
+</html>
