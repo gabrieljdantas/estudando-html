@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <h1>Cadastro</h1>
+        <form>
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    placeholder="Digite nome completo"
+                />
+                <br />
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="exemplo@exemplo.com"
+                    name="email"
+                />
+                <br />
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" minlength="6" />
+                <br />
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option disabled selected>Selecione um estado</option>
+                    <option value="CE">CE</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                    <option value="BA">BA</option>
+                    <option value="RN">RN</option>
+                    <option value="PI">PI</option>
+                    <option value="MG">MG</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                <br />
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" /> <br />
+                <label for="rua">Rua:</label>
+                <input type="text" name="rua" id="rua" /> <br />
+                <label for="numero">Numero:</label>
+                <input type="number" name="numero" id="numero" /><br />
+                <label for="CEP">CEP:</label>
+                <input
+                    type="text"
+                    name="CEP"
+                    id="CEP"
+                    pattern="[0-9]{8}"
+                    placeholder="ex. 06730000"
+                />
+                <br />
+                <label for="bio">Bio:</label> <br />
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea
+                ><br />
+                <label for="atuacao">Area de Atuação:</label>
+                <select name="atuacao" id="atuacao">
+                    <option disabled selected>Selecione uma atuação</option>
+                    <option value="fullstack">fullstack</option>
+                    <option value="Cloud">Cloud</option>
+                    <option value="Ambos">Ambos</option></select
+                ><br />
+            </fieldset>
+            <fieldset>
+                <button type="submit">Cadastrar</button><br />
+                <button type="reset">Limpar</button><br />
+            </fieldset>
+
+            <button type="button"><a href="login.html">Login</a></button>
+        </form>
+    </body>
+</html>
